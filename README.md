@@ -1,32 +1,16 @@
-# Vitest
+## README
 
-This example shows how to use [Vitest](https://github.com/vitest-dev/vitest) with Next.js.
+Portfolio site for Brendan Walsh - Software Developer
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript. This example also shows how to use Vitest with the App Router and React Server Components.
+Created with Next.js, Typescript, Vitest and Tailwind
 
-> **Note:** Since tests can be co-located alongside other files inside the App Router, we have placed those tests in `app/` to demonstrate this behavior (which is different than `pages/`). You can still place all tests in `__tests__` if you prefer.
 
-## Deploy your own
+## How to run locally:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-vitest&project-name=with-vitest&repository-name=with-vitest)
+Clone repo
 
-## How to use
+run: npm run dev
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-vitest with-vitest-app
-```
-
-```bash
-yarn create next-app --example with-vitest with-vitest-app
-```
-
-```bash
-pnpm create next-app --example with-vitest with-vitest-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
 ## Running Tests
 
@@ -42,4 +26,6 @@ yarn test
 pnpm test
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+## For questions contact:
+bdwalsh075@gmail.com
