@@ -1,0 +1,54 @@
+/* Tailwind v4: Configure custom theme values using @theme */
+@theme {
+	--brand-font: 'Inter', sans-serif;
+
+	--color-brand-primary: #000000;
+	--color-brand-secondary: #5b6c89;
+	--color-accent: #ffe630;
+	--color-accent-hover: #9f901f;
+
+	--spacing-18: 4.5rem;
+	--spacing-88: 22rem;
+
+	--radius-custom: 1rem;
+	--radius-large: 2rem;
+
+	--text-heading-h1: 2.5rem;
+	--text-link: 1.rem;
+
+	--font-weight-heading-h1-600: 600;
+
+	--padding-x-gutter: 10rem;
+
+	--animate-wiggle: wiggle 1s ease-in-out infinite;
+		@keyframes wiggle {
+		0%,
+		100% {
+			transform: rotate(-3deg);
+		}
+		50% {
+			transform: rotate(3deg);
+		}
+	}
+
+	
+}
+  
+@layer utilities {
+	.text-shadow {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.text-shadow-lg {
+		text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.scrollbar-hide {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+}
