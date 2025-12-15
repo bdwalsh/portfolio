@@ -14,6 +14,7 @@
 	--radius-large: 2rem;
 
 	--text-heading-h1: 2.5rem;
+	--text-heading-h2: 2rem;
 	--text-link: 1.rem;
 
 	--font-weight-heading-h1-600: 600;
@@ -30,8 +31,6 @@
 			transform: rotate(3deg);
 		}
 	}
-
-	
 }
   
 @layer utilities {
