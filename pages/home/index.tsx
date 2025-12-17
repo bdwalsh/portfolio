@@ -9,7 +9,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Brendan Walsh - Frontend Software Developer</title>
         <meta name="description" content="Brendan Walsh is a frontend software developer with a passion for building pixel perfect websites and web applications." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/icons/favicon.png" />
       </Head>
 
       <main className="scroll-smooth">

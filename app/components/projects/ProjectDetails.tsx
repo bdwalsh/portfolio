@@ -1,38 +1,24 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
+import { ProjectDetailsDataType } from "@/app/types/projects" 
 
-
-interface ProjectDetailsProps {
-    title: string;
-    description?: string; 
-    id?: number;
-    featureImage?: string;
-    icons?: string[];
-}
-
-const icons = [
-    "/images/icons/vue-js-icon.svg",
-    "/images/icons/laravel-icon.svg",
-    "/images/icons/typescript-icon.svg",
-    "/images/icons/jest-js-icon.svg",
-]
-
-const ProjectDetails = ({ title, description, id }: ProjectDetailsProps) => {
+const ProjectDetails = ({ id, title, description, featureImage, icons }: ProjectDetailsDataType) => {
     return (
-        <div className="grid grid-cols-3 gap-x-8">
-            <Image
-                src="/images/studio-manager-homepage-screen.png"
-                alt="Studio Manager Preview Image"
-                width={1920}
-                height={958}
-                className="col-span-1"
-            />
+        <div className="grid grid-cols-3 gap-x-8 mb-20">
+            <div className={`relative ${id && id % 2 === 0 ? 'order-2' : ''}`}>
+                <Image
+                    src={featureImage}
+                    alt="Studio Manager Preview Image"
+                    fill={true}
+                    className="col-span-1"
+                    style={{ objectFit: 'contain' }}
+                />
+            </div>
             <div className="col-span-2">
                 <h2 className="text-heading-h2 mb-2">{title}</h2>
                 {description && <p>{description}</p>}
-                {id && <p>ID: {id}</p>}
                 <ul className="flex mt-2">
-                    {icons.map((icon, index) => (
-                        // Each child in a list should have a unique "key" prop
+                    {icons?.map((icon, index) => (
                         <li key={index}>
                             <Image
                                 src={icon}
@@ -44,6 +30,10 @@ const ProjectDetails = ({ title, description, id }: ProjectDetailsProps) => {
                         </li> 
                     ))}
                 </ul>
+
+                <Link href="">
+                    Video Highlights
+                </Link>
             </div>
         </div>
     );

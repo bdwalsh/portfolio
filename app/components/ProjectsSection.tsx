@@ -1,4 +1,5 @@
 import ProjectDetails from "@/app/components/projects/ProjectDetails"
+import { projectDetailsData } from "@/app/components/projects/project-data/projects"
 
 const ProjectsSection = () => {
     return (
@@ -7,7 +8,16 @@ const ProjectsSection = () => {
                 <h1 className="text-white text-heading-h1 font-heading-h1-600">Projects I've Worked On</h1>
                 <div className="h-2 w-8 bg-accent mb-12"></div>
 
-                <ProjectDetails title="Studio Manager - Pixieset" description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur"/>
+                {projectDetailsData.map((project, index) => (
+                    <ProjectDetails 
+                        key={index} 
+                        title={project.title} 
+                        description={project.description}
+                        id={project.id}
+                        featureImage={project.featureImage}
+                        icons={project.icons}
+                    />
+                ))}
             </div>
         </section>
     );

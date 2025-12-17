@@ -9,10 +9,21 @@ const HeroSection = () => {
         <div className="flex flex-col items-center justify-center w-full z-10">
             <div className="w-full lg:max-w-[75rem]">
                 <strong className="text-white block mb-5">Frontend Software Developer</strong>
-                <h1 className="text-white text-heading-h1 font-heading-h1-600">Brendan Walsh</h1>
+                <h1 className="text-white text-heading-h1 font-heading-h1-600" data-aos="zoom-in">Brendan Walsh</h1>
                 <div className="h-2 w-8 bg-accent mb-5"></div>
-                <p>Frontend developer focused on creating pixel perfect user interfaces and sensible system design</p>
-                <Link className="bg-accent text-black text-link font-semibold inline-block duration-300 hover:bg-accent-hover mt-5 px-10 py-3.5" href={"#work"}> 
+                <p 
+                  data-aos="fade-up" 
+                  data-aos-duration="2000"
+                >
+                  Frontend developer focused on creating pixel perfect user interfaces and sensible system design
+                </p>
+                <Link 
+                  className="bg-accent text-black text-link font-semibold inline-block duration-300 hover:bg-accent-hover mt-5 px-10 py-3.5" 
+                  href={"#work"} 
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-delay="800"
+                 > 
                     <p>See What I've Worked On</p>
                 </Link>
             </div>
