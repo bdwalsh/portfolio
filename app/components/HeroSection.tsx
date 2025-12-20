@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'; // Import a specific icon
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import AppButton from '@/app/components/app/AppButton';
 
 const HeroSection = () => {
   return (
@@ -17,15 +18,15 @@ const HeroSection = () => {
                 >
                   Frontend developer focused on creating pixel perfect user interfaces and sensible system design
                 </p>
-                <Link 
-                  className="bg-accent text-black text-link font-semibold inline-block duration-300 hover:bg-accent-hover mt-5 px-10 py-3.5" 
-                  href={"#work"} 
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="800"
-                 > 
+                <div                    
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                    data-aos-delay="800"  
+                >
+                  <AppButton href="#work">
                     <p>See What I've Worked On</p>
-                </Link>
+                  </AppButton>
+                </div>
             </div>
             <Link className="animate-wiggle absolute bottom-0 text-accent font-semibold inline-block duration-300 hover:text-accent-hover mt-5 px-10 py-3.5" href={"#work"}>
               <FontAwesomeIcon size="3x" className="h-[60px] w-[60px]" icon={faChevronDown} />

@@ -11,11 +11,7 @@ const ProjectsSection = () => {
                 {projectDetailsData.map((project, index) => (
                     <ProjectDetails 
                         key={index} 
-                        title={project.title} 
-                        description={project.description}
-                        id={project.id}
-                        featureImage={project.featureImage}
-                        icons={project.icons}
+                        {...project}
                     />
                 ))}
             </div>

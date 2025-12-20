@@ -4,4 +4,5 @@ export interface ProjectDetailsDataType {
     description: string; 
     featureImage: string;
     icons?: string[];
+    altText: string;
 }
