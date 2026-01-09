@@ -1,16 +1,26 @@
 import Link from 'next/link';
-import React, { PropsWithChildren } from 'react';
+import React, { PropsWithChildren, MouseEvent } from 'react';
+
 
 export interface AppButtonProps {
     href: string;
     className?: string;
+    onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
-const AppButton: React.FC<PropsWithChildren<AppButtonProps>> = ({ href, className, children }) => {
+const AppButton: React.FC<PropsWithChildren<AppButtonProps>> = ({ href, className, onClick, children }) => {
+    const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
+        if (onClick) {
+            event.preventDefault(); // Prevent navigation if onClick is provided
+            onClick(event);
+        }
+    };
+
     return (
         <Link 
             className={`bg-accent text-black text-link font-semibold inline-block duration-300 hover:bg-accent-hover px-10 py-3.5 ${className || ''}`}
             href={href} 
+            onClick={handleClick}
         > 
             {children}
         </Link>

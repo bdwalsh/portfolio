@@ -30,7 +30,7 @@ const projectDetailsData: ProjectDetailsDataType[] = [
     },
     {
         id: 3,
-        title: 'TAdvantage Website Platform - Convertus/AutoTrader',
+        title: 'TAdvantage Website Platform - AutoTrader',
         description: 'A website builder platform for car dealership. This project involved creating wordpress plugins and custom widgets the allow dealership to customize thier websites. Integrated into this platform was a vehicle listing and details page that could be filtered by different parameters. This platform was build using Vue 2, Javascript, PHP, Wordpress and MySQL.',
         featureImage: '/images/tadvantage-screenshots.png',
         icons: [

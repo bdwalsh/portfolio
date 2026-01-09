@@ -1,5 +1,5 @@
 import ProjectDetails from "@/app/components/projects/ProjectDetails"
-import { projectDetailsData } from "@/app/components/projects/project-data/projects"
+import { projectDetailsData } from "@/app/data/projects"
 
 const ProjectsSection = () => {
     return (

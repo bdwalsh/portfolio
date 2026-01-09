@@ -18,7 +18,8 @@ const HeroSection = () => {
                 >
                   Frontend developer focused on creating pixel perfect user interfaces and sensible system design
                 </p>
-                <div                    
+                <div
+                    className="mt-4"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                     data-aos-delay="800"  

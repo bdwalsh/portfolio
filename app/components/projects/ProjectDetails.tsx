@@ -1,8 +1,19 @@
+"use client";
+
 import Image from 'next/image';
+import { useState } from 'react';
 import { ProjectDetailsDataType } from "@/app/types/projects";
 import AppButton from '@/app/components/app/AppButton'; 
+import AppModal from '@/app/components/app/AppModal';
+import ProjectHighlightsDisplay from '@/app/components/highlights/ProjectHighlightsDisplay'
 
 const ProjectDetails = ({ id, title, description, featureImage, icons, altText }: ProjectDetailsDataType) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+
     return (
         <div className="grid grid-cols-6 gap-x-8 mb-20">
             <div className='col-span-6 md:col-span-3 lg:col-span-3 relative'>
@@ -33,10 +44,18 @@ const ProjectDetails = ({ id, title, description, featureImage, icons, altText }
                 <AppButton 
                     className="mt-8"
                     href="#work"                   
+                    onClick={handleOpenModal}
                 >
                   <p>Video Highlights</p>
                 </AppButton>
             </div>
+            <AppModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                title="Video Highlights"
+            >
+                <ProjectHighlightsDisplay />
+            </AppModal>
         </div>
     );
 }
