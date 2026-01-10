@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React, { PropsWithChildren, MouseEvent } from 'react';
 
-
 export interface AppButtonProps {
     href: string;
     className?: string;

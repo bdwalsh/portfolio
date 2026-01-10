@@ -30,7 +30,10 @@ const ProjectDetails = ({ id, title, description, featureImage, icons, altText }
                 {description && <p>{description}</p>}
                 <ul className="flex mt-4">
                     {icons?.map((icon, index) => (
-                        <li key={index} className="flex">
+                        <li 
+                            key={index} 
+                            className="flex"
+                        >
                             <Image
                                 src={icon}
                                 alt={altText}
@@ -54,7 +57,7 @@ const ProjectDetails = ({ id, title, description, featureImage, icons, altText }
                 onClose={() => setIsModalOpen(false)}
                 title="Video Highlights"
             >
-                <ProjectHighlightsDisplay />
+                <ProjectHighlightsDisplay projectId={id}/>
             </AppModal>
         </div>
     );
