@@ -1,5 +1,6 @@
-import ProjectDetails from "@/app/components/projects/ProjectDetails"
 import { projectDetailsData } from "@/app/data/projects"
+import ProjectDetails from "@/app/components/projects/ProjectDetails"
+import AppButton from '@/app/components/app/AppButton'; 
 
 const ProjectsSection = () => {
     return (
@@ -17,6 +18,16 @@ const ProjectsSection = () => {
                         {...project}
                     />
                 ))}
+            </div>
+            <div className="flex flex-col justify-center items-center mt-12">
+                <p>This portolio site was build with <strong>React</strong>, <strong>Next.js</strong> and <strong>Tailwind</strong>. View the project on github here:</p>
+                <AppButton 
+                    className="mt-8"
+                    target="blank"
+                    href="https://github.com/bdwalsh/portfolio"                   
+                >
+                  <p>View my portfolio site on github</p>
+                </AppButton>
             </div>
         </section>
     );

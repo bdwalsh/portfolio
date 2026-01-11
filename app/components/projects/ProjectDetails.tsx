@@ -20,7 +20,7 @@ const ProjectDetails = ({ id, title, description, featureImage, icons, altText }
                 <Image
                     src={featureImage}
                     alt={altText}
-                    width={584}
+                    width={750}
                     height={329}
                     className="col-span-1"
                 />
@@ -55,7 +55,7 @@ const ProjectDetails = ({ id, title, description, featureImage, icons, altText }
             <AppModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                title="Video Highlights"
+                title={title}
             >
                 <ProjectHighlightsDisplay projectId={id}/>
             </AppModal>

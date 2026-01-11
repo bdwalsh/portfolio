@@ -20,15 +20,16 @@ const ProjectHighlightsDisplay = ({projectId}: ProjectHighlightsDisplayProps) =>
         <>
             {currentProjectHighlights?.highlights.map((highlight, index) => (
                 <div 
-                    className="grid grid-cols-6 gap-x-8 mb-20" 
+                    className={`flex flex-col md:flex-col lg:flex-row ${index !== currentProjectHighlights.highlights.length - 1 ? 'mb-14' : ''}`} 
                     key={index}
                 >
-                    <div className='col-span-6 md:col-span-4 lg:col-span-4 relative'>
+                    <div className='relative mr-8 flex-shrink-0'>
                         <video 
                             autoPlay 
                             muted 
                             loop 
                             preload="none"
+                            width={highlight.videoWidth}
                         >
                             <source 
                                 src={highlight.videoLink} 
@@ -37,10 +38,11 @@ const ProjectHighlightsDisplay = ({projectId}: ProjectHighlightsDisplayProps) =>
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div className="col-span-6 md:col-span-2 lg:col-span-2">
-                        <h2>
+                    <div className="flex-1 min-w-0 mt-8 md:mt-8 lg:mt-0">
+                        <h2 className="text-xl font-semibold">
                             {highlight.title || 'Title'}
                         </h2>
+                        <div className="h-1 w-8 bg-accent my-3"></div>
                         <div>
                             {highlight.description || 'Description'}
                         </div>

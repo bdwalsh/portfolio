@@ -3,11 +3,12 @@ import React, { PropsWithChildren, MouseEvent } from 'react';
 
 export interface AppButtonProps {
     href: string;
+    target?: string;
     className?: string;
     onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
-const AppButton: React.FC<PropsWithChildren<AppButtonProps>> = ({ href, className, onClick, children }) => {
+const AppButton: React.FC<PropsWithChildren<AppButtonProps>> = ({ href, target, className, onClick, children }) => {
     const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
         if (onClick) {
             event.preventDefault(); // Prevent navigation if onClick is provided
@@ -19,6 +20,7 @@ const AppButton: React.FC<PropsWithChildren<AppButtonProps>> = ({ href, classNam
         <Link 
             className={`bg-accent text-black text-link font-semibold inline-block duration-300 hover:bg-accent-hover px-10 py-3.5 ${className || ''}`}
             href={href} 
+            target={target}
             onClick={handleClick}
         > 
             {children}
