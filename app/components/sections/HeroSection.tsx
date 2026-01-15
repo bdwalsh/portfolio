@@ -38,8 +38,8 @@ const HeroSection = () => {
                 </div>
             </div>
             <Link 
-              className="animate-wiggle absolute bottom-0 text-accent font-semibold inline-block duration-300 hover:text-accent-hover mt-5 px-10 py-3.5" 
-              href={"#work"}
+              className="animate-bounce absolute bottom-0 text-accent font-semibold inline-block duration-300 hover:text-accent-hover mt-5 px-10 py-3.5" 
+              href={"#projects"}
             >
               <FontAwesomeIcon 
                 size="3x" 

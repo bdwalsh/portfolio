@@ -15,20 +15,80 @@
 
 	--text-heading-h1: 2.5rem;
 	--text-heading-h2: 2rem;
+	--text-heading-h2: 1.5rem;
 	--text-link: 1.rem;
 
 	--font-weight-heading-h1-600: 600;
 
+	--shadow-accent: 1px -4px 53px -7px rgba(255,230,48,0.67);
+	
 	--padding-x-gutter: 10rem;
 
-	--animate-wiggle: wiggle 1s ease-in-out infinite;
-		@keyframes wiggle {
+	--animate-bounce: bounce 1s ease-in-out infinite;
+		@keyframes bounce {
 		0%,
 		100% {
-			transform: rotate(-3deg);
+			transform: translateY(0);
 		}
 		50% {
-			transform: rotate(3deg);
+			transform: translateY(-20px);
+		}
+	}
+
+	--animate-float-1: float 6s ease-in-out infinite;
+		@keyframes float {
+		0% {
+			transform: translate(0, 0);
+		}
+		25% {
+			transform: translate(10px, -10px);
+		}
+		50% {
+			transform: translate(-5px, 5px);
+		}
+		75% {
+			transform: translate(-5px, -10px);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+
+	--animate-float-2: float-2 6s ease-in-out infinite;
+		@keyframes float-2 {
+		0% {
+			transform: translate(0, 0);
+		}
+		25% {
+			transform: translate(-5px, -5px);
+		}
+		50% {
+			transform: translate(-10px, 10px);
+		}
+		75% {
+			transform: translate(5px, 5px);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+
+	--animate-float-3: float-3 6s ease-in-out infinite;
+		@keyframes float-3 {
+		0% {
+			transform: translate(0, 0);
+		}
+		25% {
+			transform: translate(-5px, 5px);
+		}
+		50% {
+			transform: translate(5px, 5px);
+		}
+		75% {
+			transform: translate(-10px, -10px);
+		}
+		100% {
+			transform: translate(0, 0);
 		}
 	}
 }

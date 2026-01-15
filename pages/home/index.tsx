@@ -1,7 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import HeroSection from "@/app/components/HeroSection";
-import ProjectsSection from "@/app/components/ProjectsSection"
+import AppMenu from "@/app/components/app/AppMenu";
+import AppFooter from "@/app/components/app/AppFooter"
+import HeroSection from "@/app/components/sections/HeroSection";
+import ProjectsSection from "@/app/components/sections/ProjectsSection"
+import AboutSection from "@/app/components/sections/AboutSection";
+import SkillsSection from "@/app/components/sections/SkillsSection";
+import ContactSection from "@/app/components/sections/ContactSection";
 
 const Home: NextPage = () => {
   return (
@@ -13,8 +18,13 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="scroll-smooth">
+        <AppMenu />
         <HeroSection />
         <ProjectsSection />
+        <SkillsSection />
+        <AboutSection />
+        <ContactSection />
+        <AppFooter />
       </main>
     </div>
   );
