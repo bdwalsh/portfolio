@@ -6,7 +6,7 @@ const ProjectsSection = () => {
     return (
         <section 
             id="projects" 
-            className="bg-brand-primary flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-10 lg:px-[100px]"
+            className="bg-brand-primary flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-14 lg:px-[100px]"
         >
             <div className="w-full lg:max-w-[75rem]">
                 <h1 className="text-white text-heading-h1 font-heading-h1-600">Projects I've Worked On</h1>
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col justify-center items-center mt-12">
+            <div className="flex flex-col justify-center items-center mt-0 sm:mt-12">
                 <p>Curious about this site? This portolio site was build with <strong>React</strong>, <strong>Next.js</strong> and <strong>Tailwind</strong>. View the project on github here:</p>
                 <AppButton 
                     className="mt-8"

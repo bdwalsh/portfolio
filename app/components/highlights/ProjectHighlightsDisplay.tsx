@@ -1,4 +1,4 @@
-import { useMemo, useState, useRef, useEffect } from 'react';
+import { useMemo } from 'react';
 import { projectHighlightsData } from '@/app/data/highlights';
 
 export interface ProjectHighlightsDisplayProps  {
