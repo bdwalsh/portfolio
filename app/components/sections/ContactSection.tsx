@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import AppContentWrapper from '@/app/components/app/AppContentWrapper'; 
 
 const ContactSection = () => {
   return (
@@ -6,7 +7,7 @@ const ContactSection = () => {
       id="contact" 
       className="bg-brand-primary flex flex-col items-center justify-center px-4 pt-6 pb-30 md:px-8 md:pt-14 lg:px-[100px]"
     >
-        <div className="w-full lg:max-w-[75rem]">
+        <AppContentWrapper>
             <div className="flex flex-col items-center">
               <h1 className="text-heading-h2 font-heading-h2-600 mb-2">Get in Touch!</h1>
               <p>
@@ -47,7 +48,7 @@ const ContactSection = () => {
                 </a>
               </div>
             </div>
-        </div>
+        </AppContentWrapper>
     </section>
   );
 };

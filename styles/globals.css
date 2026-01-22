@@ -30,3 +30,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Component classes */
+.skill-bubble {
+  @apply xl:absolute flex items-center justify-start xl:justify-center bg-accent overflow-hidden mb-2 px-4 rounded-full text-black shadow-accent;
+}
+

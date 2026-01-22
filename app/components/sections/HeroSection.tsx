@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import AppButton from '@/app/components/app/AppButton';
+import AppContentWrapper from '@/app/components/app/AppContentWrapper';
 
 const HeroSection = () => {
   return (
@@ -11,7 +12,7 @@ const HeroSection = () => {
           className="absolute z-0 w-full h-full"
         />
         <div className="flex flex-col items-center justify-center w-full z-10">
-            <div className="w-full lg:max-w-[75rem]">
+            <AppContentWrapper>
                 <strong className="text-white block mb-5">Frontend Software Developer</strong>
                 <h1 
                   className="text-white text-heading-h1 font-heading-h1-600" 
@@ -36,7 +37,7 @@ const HeroSection = () => {
                     <p>See What I've Worked On</p>
                   </AppButton>
                 </div>
-            </div>
+            </AppContentWrapper>
             <Link 
               className="animate-bounce absolute bottom-0 text-accent font-semibold inline-block duration-300 hover:text-accent-hover mt-5 px-10 py-3.5" 
               href={"#projects"}

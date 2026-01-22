@@ -24,6 +24,7 @@
 	
 	--padding-x-gutter: 10rem;
 
+	/* animations */
 	--animate-bounce: bounce 1s ease-in-out infinite;
 		@keyframes bounce {
 		0%,
