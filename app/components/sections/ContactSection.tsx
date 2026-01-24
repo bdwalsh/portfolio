@@ -27,6 +27,7 @@ const ContactSection = () => {
                   className="hover:text-accent" 
                   href="https://linkedin.com/in/brendanwalsh3" 
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   www.linkedin.com/in/brendanwalsh3
                 </a>
@@ -34,7 +35,7 @@ const ContactSection = () => {
               <div className="flex xl:text-heading-h3">                            
                 <Image
                     src="/images/icons/github-white-icon.svg"
-                    alt="LinkedIn logo"
+                    alt="GitHub logo"
                     width={25}
                     height={25}
                     className="mr-4"
@@ -43,6 +44,7 @@ const ContactSection = () => {
                   className="hover:text-accent" 
                   href="https://github.com/bdwalsh" 
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   https://github.com/bdwalsh
                 </a>

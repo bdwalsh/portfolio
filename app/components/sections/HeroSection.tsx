@@ -6,10 +6,11 @@ import AppContentWrapper from '@/app/components/app/AppContentWrapper';
 
 const HeroSection = () => {
   return (
-    <section className="h-screen bg-brand-primary flex flex-col items-center justify-center px-4 py-14 md:px-8 md:py-20 lg:px-[100px]">
+    <section className="relative min-h-[100dvh] bg-brand-primary flex flex-col items-center justify-center px-4 py-14 md:px-8 md:py-20 lg:px-[100px]">
         <div 
           id="particles-js" 
           className="absolute z-0 w-full h-full"
+          aria-hidden="true"
         />
         <div className="flex flex-col items-center justify-center w-full z-10">
             <AppContentWrapper>
@@ -34,18 +35,19 @@ const HeroSection = () => {
                     data-aos-delay="800"  
                 >
                   <AppButton href="#work">
-                    <p>See What I've Worked On</p>
+                    <span>See What I've Worked On</span>
                   </AppButton>
                 </div>
             </AppContentWrapper>
             <Link 
               className="animate-bounce absolute bottom-0 text-accent font-semibold inline-block duration-300 hover:text-accent-hover mt-5 px-10 py-3.5" 
-              href={"#projects"}
+              href="#projects"
             >
               <FontAwesomeIcon 
                 size="3x" 
                 className="h-[60px] w-[60px]" 
                 icon={faChevronDown} 
+                aria-hidden="true"
               />
             </Link>
         </div>

@@ -10,10 +10,10 @@ const SkillsSection = () => {
         <AppContentWrapper>
             <h1 className="text-white text-heading-h1 font-heading-h1-600">Skills</h1>
             <div className="h-2 w-8 bg-accent mb-12"></div>
-            <div className="relative flex flex-col flex-wrap justify-center w-full w-lg:h-auto xl:h-[1000px]">
-                {skillsData.map((skill, index) => (
+            <div className="relative flex flex-col flex-wrap justify-center w-full lg:h-auto xl:h-[1000px]">
+                {skillsData.map((skill) => (
                     <div 
-                        key={index}
+                        key={skill.id}
                         className={`skill-bubble ${skill.animation || ''} ${skill.width || ''} ${skill.height || ''}`}                  
                         style={{ top: skill.top, left: skill.left }}
                         data-aos="fade-up" 

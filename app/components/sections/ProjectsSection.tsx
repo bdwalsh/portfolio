@@ -13,8 +13,8 @@ const ProjectsSection = () => {
                 <h1 className="text-white text-heading-h1 font-heading-h1-600">Projects I've Worked On</h1>
                 <div className="h-2 w-8 bg-accent mb-12"></div>
 
-                {projectDetailsData.map((project, index) => (
-                    <div key={index} data-aos-delay="0" data-aos="fade-right">
+                {projectDetailsData.map((project) => (
+                    <div key={project.id} data-aos-delay="0" data-aos="fade-right">
                         <ProjectDetails
                             {...project}
                         />
@@ -24,10 +24,11 @@ const ProjectsSection = () => {
                     <p>Curious about this site? This portolio site was build with <strong>React</strong>, <strong>Next.js</strong> and <strong>Tailwind</strong>. View the project on github here:</p>
                     <AppButton 
                         className="mt-8"
-                        target="blank"
+                        target="_blank"
+                        rel="noreferrer noopener"
                         href="https://github.com/bdwalsh/portfolio"                   
                     >
-                    <p>View my portfolio site on github</p>
+                    <span>View my portfolio site on github</span>
                     </AppButton>
                 </div>
             </AppContentWrapper>
