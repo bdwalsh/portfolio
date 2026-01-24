@@ -12,7 +12,6 @@ export interface AppButtonProps {
 const AppButton: React.FC<PropsWithChildren<AppButtonProps>> = ({ href, target, rel, className, onClick, children }) => {
     const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
         if (onClick) {
-            event.preventDefault(); // Prevent navigation if onClick is provided
             onClick(event);
         }
     };

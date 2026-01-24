@@ -29,9 +29,9 @@ const ProjectDetails = ({ id, title, description, featureImage, icons, altText }
                 <h2 className="text-heading-h2 mb-2">{title}</h2>
                 {description && <p>{description}</p>}
                 <ul className="flex mt-4">
-                    {icons?.map((icon, index) => (
+                    {icons?.map((icon) => (
                         <li 
-                            key={index} 
+                            key={icon} 
                             className="flex"
                         >
                             <Image
@@ -49,7 +49,7 @@ const ProjectDetails = ({ id, title, description, featureImage, icons, altText }
                     href="#work"                   
                     onClick={handleOpenModal}
                 >
-                  <p>Video Highlights</p>
+                  <span>Video Highlights</span>
                 </AppButton>
             </div>
             <AppModal

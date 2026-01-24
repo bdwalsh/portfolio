@@ -20,8 +20,8 @@ const ProjectHighlightsDisplay = ({projectId}: ProjectHighlightsDisplayProps) =>
         <>
             {currentProjectHighlights?.highlights.map((highlight, index) => (
                 <div 
-                    className={`flex flex-col md:flex-col lg:flex-row ${index !== currentProjectHighlights.highlights.length - 1 ? 'mb-14' : ''}`} 
-                    key={index}
+                    className={`flex flex-col lg:flex-row ${index !== currentProjectHighlights.highlights.length - 1 ? 'mb-14' : ''}`} 
+                    key={highlight.id}
                 >
                     <div className='relative md:mr-8 flex-shrink-0'>
                         <video 
