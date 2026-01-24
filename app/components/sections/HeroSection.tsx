@@ -6,7 +6,7 @@ import AppContentWrapper from '@/app/components/app/AppContentWrapper';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[100dvh] bg-brand-primary flex flex-col items-center justify-center px-4 py-14 md:px-8 md:py-20 lg:px-[100px]">
+    <section id="home" className="relative min-h-[100dvh] bg-brand-primary flex flex-col items-center justify-center px-4 py-14 md:px-8 md:py-20 lg:px-[100px]">
         <div 
           id="particles-js" 
           className="absolute z-0 w-full h-full"

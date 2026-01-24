@@ -5,6 +5,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { clearHashOnLoad, setupScrollHash } from "@/app/helpers/scrollHash";
 
 // Tell Font Awesome to skip adding the CSS automatically since it's already imported above
 config.autoAddCss = false;
@@ -24,6 +25,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       // Initialize AOS (Animate On Scroll)
       AOS.init();
 
+      // Clear hash on page load/reload
+      clearHashOnLoad();
+
+      const cleanupScrollHash = setupScrollHash({ offset: 80 });
+
       // @ts-ignore - particles.js doesn't have type definitions
       import("particles.js").then(() => {
         if (window.particlesJS) {
@@ -32,6 +38,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           });
         }
       });
+
+      return () => {
+        cleanupScrollHash();
+      };
     }
   }, []);
 
