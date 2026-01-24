@@ -15,7 +15,7 @@ const ContactSection = () => {
                   bdwalsh075@gmail.com
                 </a>
               </p>
-              <div className="flex text-heading-h3">                            
+              <div className="flex xl:text-heading-h3">                            
                 <Image
                     src="/images/icons/linkedin-icon.svg"
                     alt="LinkedIn logo"
@@ -25,13 +25,13 @@ const ContactSection = () => {
                 />
                 <a 
                   className="hover:text-accent" 
-                  href="www.linkedin.com/in/brendanwalsh3" 
+                  href="https://linkedin.com/in/brendanwalsh3" 
                   target="_blank"
                 >
                   www.linkedin.com/in/brendanwalsh3
                 </a>
               </div>
-              <div className="flex text-heading-h3">                            
+              <div className="flex xl:text-heading-h3">                            
                 <Image
                     src="/images/icons/github-white-icon.svg"
                     alt="LinkedIn logo"

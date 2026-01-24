@@ -4,7 +4,7 @@ const projectDetailsData: ProjectDetailsDataType[] = [
     {
         id: 1,
         title: 'Studio Manager - Pixieset',
-        description: 'A business management tool for photographers. Users can create contracts, invoices, questionniaires and other documents. Other features inclused a unified inbox that lets users manage their email communications in a chat like interface as well as a payment management system. This platform was built with Vue 3, Javascript, Laravel and tested with jest.',
+        description: 'A business management tool for photographers. Users can create contracts, invoices, questionnaires, and other documents. Additional features include a unified inbox that allows users to manage their email communications in a chat-like interface, as well as a payment management system. This platform was built with Vue 3, JavaScript, and Laravel, and tested with Jest.',
         featureImage: '/images/studio-manager-screenshots.png',
         icons: [
             "/images/icons/vue-js-icon.svg",
@@ -17,7 +17,7 @@ const projectDetailsData: ProjectDetailsDataType[] = [
     {
         id: 2,
         title: 'Studio Manager Mobile App - Pixieset',
-        description: 'A mobile application version of the studio manager photography business management tool. The project involved creating mobile flows for contracts, messaging and project management. As well as this, a brand new Tap to Pay payment system and payment reporting graphs were built specifically for this app. This app was built with Vue 3, Typescript, Ionic, Vite and Vitest.',
+        description: 'A mobile application version of the Studio Manager photography business management tool. The project involved creating mobile workflows for contracts, messaging, and project management. In addition, a brand-new Tap to Pay payment system and payment reporting graphs were built specifically for this app. The app was built with Vue 3, TypeScript, Ionic, Vite, and Vitest.',
         featureImage: '/images/studio-manager-mobile-screenshots.png',
         icons: [
             "/images/icons/vue-js-icon.svg",
@@ -31,7 +31,7 @@ const projectDetailsData: ProjectDetailsDataType[] = [
     {
         id: 3,
         title: 'TAdvantage Website Platform - AutoTrader',
-        description: 'A website builder platform for car dealership. This project involved creating wordpress plugins and custom widgets the allow dealership to customize thier websites. Integrated into this platform was a vehicle listing and details page that could be filtered by different parameters. This platform was build using Vue 2, Javascript, PHP, Wordpress and MySQL.',
+        description: 'A website builder platform for car dealerships. This project involved creating WordPress plugins and custom widgets that allow dealerships to customize their websites. Integrated into the platform was a vehicle listing and details page that could be filtered by various parameters. The platform was built using Vue 2, JavaScript, PHP, WordPress, and MySQL.',
         featureImage: '/images/tadvantage-screenshots.png',
         icons: [
             "/images/icons/vue-js-icon.svg",
