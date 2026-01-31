@@ -108,13 +108,13 @@ const ContactForm = () => {
 			</div>
 
 			{status === "error" && (
-				<div className="mb-4 p-3 bg-red-500/20 border border-red-500 rounded-md text-red-300">
+				<div className="mb-4 pb-3 text-red-300">
 					{errorMessage}
 				</div>
 			)}
 
 			{status === "success" && (
-				<div className="mb-4 p-3 bg-green-500/20 border border-green-500 rounded-md text-green-300">
+				<div className="mb-4 pb-3 text-green-300">
 					Message sent successfully! I'll get back to you soon.
 				</div>
 			)}
@@ -122,7 +122,7 @@ const ContactForm = () => {
 			<button
 				type="submit"
 				disabled={status === "submitting"}
-				className="w-full bg-accent text-black font-semibold py-3 px-6 rounded-md hover:bg-accent-hover transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+				className="w-full bg-accent text-black font-semibold py-3 px-6 hover:bg-accent-hover transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
 			>
 				{status === "submitting" ? "Sending..." : "Send Message"}
 			</button>

@@ -33,6 +33,37 @@ a {
 
 /* Component classes */
 .skill-bubble {
-  @apply xl:absolute flex items-center justify-start xl:justify-center bg-accent overflow-hidden mb-2 px-4 rounded-full text-black shadow-accent;
+	@apply xl:absolute flex items-center justify-start xl:justify-center bg-accent overflow-hidden mb-2 px-4 rounded-full text-black;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-bubble:hover {
+	transform: scale(1.08);
+	z-index: 10;
+}
+
+/* Glow intensity variants based on bubble size */
+.skill-bubble.glow-lg {
+	box-shadow: 0 0 60px 15px rgba(255, 230, 48, 0.5);
+}
+
+.skill-bubble.glow-lg:hover {
+	box-shadow: 0 0 80px 25px rgba(255, 230, 48, 0.7);
+}
+
+.skill-bubble.glow-md {
+	box-shadow: 0 0 40px 10px rgba(255, 230, 48, 0.4);
+}
+
+.skill-bubble.glow-md:hover {
+	box-shadow: 0 0 60px 18px rgba(255, 230, 48, 0.6);
+}
+
+.skill-bubble.glow-sm {
+	box-shadow: 0 0 25px 6px rgba(255, 230, 48, 0.35);
+}
+
+.skill-bubble.glow-sm:hover {
+	box-shadow: 0 0 40px 12px rgba(255, 230, 48, 0.55);
 }
 

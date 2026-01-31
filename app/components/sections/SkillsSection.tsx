@@ -14,12 +14,13 @@ const SkillsSection = () => {
 					{skillsData.map((skill) => (
 						<div 
 							key={skill.id}
-							className={`skill-bubble ${skill.animation || ''} ${skill.width || ''} ${skill.height || ''}`}                  
+							className={`skill-bubble ${skill.glow} ${skill.animation || ''} ${skill.width} ${skill.height}`}                  
 							style={{ top: skill.top, left: skill.left }}
 							data-aos="fade-up" 
-							data-aos-duration="1000"
+							data-aos-duration="800"
+							data-aos-delay={skill.delay}
 						>
-							<h3 className="text-heading-h3 xl:text-heading-h2 font-heading-h1-600">{skill.name}</h3>
+							<h3 className="text-heading-h3 xl:text-heading-h2 font-heading-h1-600 select-none">{skill.name}</h3>
 						</div>
 					))}
 				</div>

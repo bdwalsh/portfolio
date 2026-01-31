@@ -9,7 +9,7 @@ const projectHighlightsData: ProjectHighlightsDataType[] = [
             {
                 id: 'studio-manager-unified-inbox',
                 title: 'Unified Inbox',
-                description: 'The unified inbox feature is a messenger-like chat interface that allows users to send and receive emails. It was built using JavaScript and Vue, leveraging an internal REST API to retrieve data. WebSockets were also implemented to update message status in real time.',
+                description: 'The unified inbox feature is a messenger-like chat interface that allows users to send and receive emails. It was built using JavaScript and Vue, leveraging an internal REST API to retrieve data. I also built a custom floating text editor with the use of tiptap to format text. WebSockets were implemented to update message status in real time.',
                 videoLink: '/videos/sm-inbox-video.mp4',
                 videoWidth: '700',
             },
@@ -51,14 +51,14 @@ const projectHighlightsData: ProjectHighlightsDataType[] = [
             {
                 id: 'tadvantage-search-results',
                 title: 'Vehicle Search Results Page',
-                description: 'A search results page for finding vehicles at a specific dealership based on desired parameters. Built using Vue and PHP, data was retrieved through API calls as the user updated the filters. Care was taken to ensure a good user experience when displaying loading states.',
+                description: 'A search results page for finding vehicles at a specific dealership based on desired parameters. Built using Vue and PHP, data is retrieved through API calls as the user updates the filters. Care was taken to ensure a good user experience when displaying loading states.',
                 videoLink: '/videos/tadvantage-srp-video.mp4',
                 videoWidth: '700',
             },
             {
                 id: 'tadvantage-homepage-widgets',
                 title: 'Homepage Widgets',
-                description: 'Custom functionality built into WordPress that allowed developers to create customizable widgets for dealership websites. Widgets ranged from hero videos to featured vehicle carousels.',
+                description: 'Custom functionality built into WordPress that allows developers to create customizable widgets for dealership websites. Widgets range from hero videos to featured vehicle carousels.',
                 videoLink: '/videos/tadvantage-homepage-video.mp4',
                 videoWidth: '700',
             }
