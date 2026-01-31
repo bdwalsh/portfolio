@@ -19,7 +19,7 @@ const HeroSection = () => {
                   className="text-white text-heading-h1 font-heading-h1-600" 
                   data-aos="zoom-in"
                 >
-                  Brendan Walsh
+                    Brendan Walsh
                 </h1>
                 <div className="h-2 w-8 bg-accent mb-5"></div>
                 <p 
@@ -29,12 +29,12 @@ const HeroSection = () => {
                   Frontend developer focused on creating pixel perfect user interfaces and sensible system design
                 </p>
                 <div
-                    className="mt-4"
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    data-aos-delay="800"  
+                  className="mt-4"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-delay="800"  
                 >
-                  <AppButton href="#work">
+                  <AppButton href="#projects">
                     <span>See What I've Worked On</span>
                   </AppButton>
                 </div>

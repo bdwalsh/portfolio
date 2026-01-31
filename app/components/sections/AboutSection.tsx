@@ -8,7 +8,7 @@ const AboutSection = () => {
       className="bg-brand-primary flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-14 lg:px-[100px]"
     >
         <AppContentWrapper>
-            <h1 className="text-white text-heading-h1 font-heading-h1-600">About Brendan</h1>
+            <h1 className="text-heading-h2 font-heading-h2-600 mb-2">About Brendan</h1>
             <div className="h-2 w-8 bg-accent mb-12"></div>
             <div className="flex flex-col items-center justify-center">
                 <div className="w-[250px] h-[250px] overflow-hidden mb-8 rounded-full">
