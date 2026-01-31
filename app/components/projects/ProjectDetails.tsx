@@ -25,7 +25,7 @@ const ProjectDetails = ({ id, title, description, featureImage, icons, altText }
                     className="col-span-1"
                 />
             </div>
-            <div className="col-span-6 md:col-span-3 lg:col-span-3">
+            <div className="col-span-6 flex flex-col items-center text-center md:text-left md:items-start md:col-span-3 lg:col-span-3">
                 <h2 className="text-heading-h2 mb-2">{title}</h2>
                 {description && <p>{description}</p>}
                 <ul className="flex mt-4">

@@ -22,11 +22,12 @@ const HeroSection = () => {
                     Brendan Walsh
                 </h1>
                 <div className="h-2 w-8 bg-accent mb-5"></div>
-                <p 
+                <p
+                  className='text-xl' 
                   data-aos="fade-up" 
                   data-aos-duration="2000"
                 >
-                  Frontend developer focused on creating pixel perfect user interfaces and sensible system design
+                  Crafting pixel-perfect interfaces with architecture that scales
                 </p>
                 <div
                   className="mt-4"

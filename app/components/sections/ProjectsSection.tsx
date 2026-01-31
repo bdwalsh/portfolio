@@ -28,7 +28,7 @@ const ProjectsSection = () => {
 						rel="noreferrer noopener"
 						href="https://github.com/bdwalsh/portfolio"                   
 					>
-						<span>View my portfolio site on github</span>
+						<span className="text-base">View my portfolio site on github</span>
 					</AppButton>
 				</div>
 			</AppContentWrapper>
