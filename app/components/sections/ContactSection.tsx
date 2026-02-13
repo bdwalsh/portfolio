@@ -6,7 +6,7 @@ const ContactSection = () => {
   return (
     <section 
       id="contact" 
-      className="bg-brand-primary flex flex-col items-center justify-center px-4 pt-6 pb-30 md:px-8 md:pt-14 lg:px-[100px]"
+      className="bg-transparent flex flex-col items-center justify-center px-4 pt-6 pb-30 md:px-8 md:pt-14 lg:px-[100px]"
     >
         <AppContentWrapper>
             <div className="flex flex-col items-center">

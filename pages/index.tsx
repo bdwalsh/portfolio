@@ -12,10 +12,10 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Brendan Walsh - Frontend Software Developer</title>
+        <title>Brendan Walsh - Software Developer</title>
         <meta
           name="description"
-          content="Brendan Walsh is a frontend software developer with a passion for building pixel perfect websites and web applications."
+          content="Brendan Walsh is a software developer with a passion for building pixel perfect websites and web applications."
         />
         <link rel="icon" href="/images/icons/favicon.png" />
       </Head>

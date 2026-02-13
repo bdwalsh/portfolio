@@ -7,7 +7,7 @@ const ProjectsSection = () => {
 	return (
 		<section 
 			id="projects" 
-			className="bg-brand-primary flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-14 lg:px-[100px]"
+			className="bg-transparent flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-14 lg:px-[100px]"
 		>
 			<AppContentWrapper>
 				<h1 className="text-white text-heading-h1 font-heading-h1-600">Projects I've Worked On</h1>

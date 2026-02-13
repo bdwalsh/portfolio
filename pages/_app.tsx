@@ -45,5 +45,16 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     }
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <div
+        id="particles-js"
+        className="fixed inset-0 pointer-events-none bg-brand-primary"
+        aria-hidden="true"
+      />
+      <div className="relative z-10">
+        <Component {...pageProps} />
+      </div>
+    </>
+  );
 }

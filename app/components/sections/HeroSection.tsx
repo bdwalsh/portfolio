@@ -6,15 +6,10 @@ import AppContentWrapper from '@/app/components/app/AppContentWrapper';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-[100dvh] bg-brand-primary flex flex-col items-center justify-center px-4 py-14 md:px-8 md:py-20 lg:px-[100px]">
-        <div 
-          id="particles-js" 
-          className="absolute z-0 w-full h-full"
-          aria-hidden="true"
-        />
+    <section id="home" className="relative min-h-[100dvh] bg-transparent flex flex-col items-center justify-center px-4 py-14 md:px-8 md:py-20 lg:px-[100px]">
         <div className="flex flex-col items-center justify-center w-full z-10">
             <AppContentWrapper>
-                <strong className="text-white block mb-5">Frontend Software Developer</strong>
+                <strong className="text-white block mb-5">Software Developer</strong>
                 <h1 
                   className="text-white text-heading-h1 font-heading-h1-600" 
                   data-aos="zoom-in"

@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section 
       id="about" 
-      className="bg-brand-primary flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-14 lg:px-[100px]"
+      className="bg-transparent flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-14 lg:px-[100px]"
     >
         <AppContentWrapper>
             <h1 className="text-heading-h2 font-heading-h2-600 mb-2">About Brendan</h1>

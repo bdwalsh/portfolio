@@ -5,12 +5,12 @@ const SkillsSection = () => {
 	return (
 		<section 
 			id="skills" 
-			className="bg-brand-primary flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-14 lg:px-[100px]"
+			className="bg-transparent flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-14 lg:px-[100px]"
 		>
 			<AppContentWrapper>
 				<h1 className="text-white text-heading-h1 font-heading-h1-600">Skills</h1>
 				<div className="h-2 w-8 bg-accent mb-12"></div>
-				<div className="relative flex flex-col flex-wrap justify-center w-full lg:h-auto xl:h-[1000px]">
+				<div className="relative flex flex-col flex-wrap justify-center w-full lg:h-auto xl:h-[1100px]">
 					{skillsData.map((skill) => (
 						<div 
 							key={skill.id}
